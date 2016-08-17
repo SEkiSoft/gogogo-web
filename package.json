@@ -1,0 +1,19 @@
+{
+  "name": "gogogo-web",
+  "version": "1.0.0",
+  "description": "The front end interface to gogogo, an online go game",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEkiSoft/gogogo-web.git"
+  },
+  "author": "SEkiSoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SEkiSoft/gogogo-web/issues"
+  },
+  "homepage": "https://github.com/SEkiSoft/gogogo-web#readme"
+}
