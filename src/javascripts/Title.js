@@ -1,8 +1,13 @@
 import React from 'react';
+import '../stylesheets/Title.css';
 
 class Title extends React.Component {
 	render() {
-		return <h1>GoGoGo</h1>;
+		return (
+			<div className='container'>
+				<h1>GoGoGo App</h1>
+			</div>
+		);
 	}
 }
 
