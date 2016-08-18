@@ -1,7 +1,11 @@
+const webpack = require('webpack');
+const path = require('path');
+
 module.exports = {
 	entry: [
 		'webpack-dev-server/client?http://localhost:8080',
-		'./src/javascripts/Site.jsx',
+		'webpack/hot/only-dev-server',
+		'./src/javascripts/Site.js',
 	],
 	output: {
 		publicPath: '/public/',
@@ -10,10 +14,13 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.jsx?$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader'
-			}
+				test: /\.js?$/,
+				loaders: ['react-hot', 'babel-loader'],
+				include: path.join(__dirname, 'src')
+			},
 		]
-	}
+	},
+	plugins: [
+  	new webpack.HotModuleReplacementPlugin()
+	]
 }
