@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 
 import rootReducer from '../reducers';
 
-import Title from './Title.js';
+import Title from '../components/Title';
 
 const store = createStore(rootReducer, {}, compose(
 	applyMiddleware(thunk), 
