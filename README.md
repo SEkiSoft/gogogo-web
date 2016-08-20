@@ -5,8 +5,9 @@ The front-end interface for GoGoGo, powered by React.js
 <code> npm install </code>, then  <code> npm start </code>
 
 External Tools that may help:
-[Linter](https://github.com/roadhump/SublimeLinter-eslint) for sublime text. Mostly follows Airbnb's style guide. Installing the npm packages shouldn't be mandatory since it is included locally.
-[Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to track application state from the console.
+
+1. [Linter](https://github.com/roadhump/SublimeLinter-eslint) for sublime text. Mostly follows Airbnb's style guide. Installing the npm packages shouldn't be mandatory since it is included locally.
+2. [Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to track application state from the console.
 
 | Dependency | Use |
 | ----------- | ---- |
