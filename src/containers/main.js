@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import rootReducer from '../reducers';
 
 import Title from '../components/Title';
+import Login from '../components/Login';
 
 const store = createStore(rootReducer, {}, compose(
 	applyMiddleware(thunk), 
@@ -16,6 +17,9 @@ const store = createStore(rootReducer, {}, compose(
 
 ReactDOM.render(
 	<Provider store={store}>
-		<Title />
+		<div>
+			<Title />
+			<Login />
+		</div>
 	</Provider>, document.getElementById("App")
 );
