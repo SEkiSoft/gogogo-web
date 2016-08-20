@@ -1,10 +1,12 @@
 import React from 'react';
+import '../stylesheets/Title.css';
 
 class Login extends React.Component {
 	render() {
 		return (
 			<div className="row">
-				<div className="col-md-6 col-centered">
+				<div className="col-md-3 col-centered">
+					<h2>Login</h2>
 					<form action="/" method="post">
 						<div className="form-group">
 			              <input name="username" className="form-control" placeholder="Username" required/>
@@ -14,6 +16,7 @@ class Login extends React.Component {
 			            </div>
 			            <button type="submit" className="btn btn-primary center-block">Login</button>
 					</form>
+					<h5>Don't have an account? Sign up <a href="">here</a>.</h5>
 				</div>
 			</div>
 		);
