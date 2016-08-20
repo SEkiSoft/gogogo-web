@@ -16,7 +16,7 @@ class Title extends React.Component {
 			<div className='container'>
 				<h1>GoGoGo App</h1>
 				<button className='btn btn-default' onClick={this.sendAction}> 					
-					Test Redux 
+					Test Redux
 				</button>
 				{workingStore &&
 					<h2>Redux Works</h2>}
