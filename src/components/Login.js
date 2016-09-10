@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/Title.css';
+import './stylesheets/Title.css';
 
 class Login extends React.Component {
 	render() {

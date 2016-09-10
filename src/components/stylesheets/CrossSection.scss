@@ -1,0 +1,94 @@
+.crossSection {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+}
+
+.vertical-line {
+	width: 2px;
+	height: 26px;
+	margin-left: 13px;
+	background-color: black;
+	&.topEdge {
+		height: 12px;
+		margin-top: 14px;
+	}
+	&.bottomEdge {
+		height: 14px;
+	}
+	&.topLeftCorner {
+		margin-top: 14px;
+		height: 12px;
+	}
+	&.topRightCorner {
+		margin-top: 14px;
+		height: 12px;
+	}
+	&.bottomLeftCorner {
+		height: 14px;
+	}
+	&.bottomRightCorner {
+		height: 14px;
+	}
+}
+
+.horizontal-line {
+	width: 26px;
+	height: 2px;
+	margin-top: -12px;
+	background-color: black;
+	&.leftEdge {
+		width: 13px;
+		margin-left: 13px;
+	}
+	&.rightEdge {
+		width: 13px;
+	}
+	&.bottomEdge {
+		margin-top: 0px;
+	}
+	&.topLeftCorner {
+		width: 13px;
+		margin-left: 13px;
+	}
+	&.topRightCorner {
+		width: 13px;
+	}
+	&.bottomLeftCorner {
+		width: 13px;
+		margin-left: 13px;
+		margin-top: 0px;
+	}
+	&.bottomRightCorner {
+		width: 15px;
+		margin-top: 0px;
+	}
+}
+
+.piece {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	z-index: 1;
+	position: relative;
+	bottom: 27px;
+}
+
+.boardSection {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.hiddenPiece {
+	z-index: 1;
+	position: relative;
+	bottom: 27px;
+	visibility: hidden;
+}

@@ -5,7 +5,7 @@ module.exports = {
 	entry: [
 		'webpack-dev-server/client?http://localhost:8080',
 		'./src/containers/main.js',
-		'./src/stylesheets/main.scss'
+		'./src/components/stylesheets/main.scss'
 	],
 	output: {
 		publicPath: '/public/',
@@ -18,22 +18,18 @@ module.exports = {
 				loaders: ['react-hot-loader', 'babel-loader'],
 				include: path.join(__dirname, 'src')
 			},
-			{
-        test: /\.(png|jpg|jpeg|gif)$/,
-        loader: 'url?limit=10000'
-      },
-      { 
-      	test: /\.css$/,
-      	loader: "style-loader!css-loader"
-      },
-      { 
-      	test: /\.scss$/, 
-      	loader: 'style!css!sass!'
-      },
-			{
-        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
-        loader: 'file'
-    	},
+	       { 
+	      		test: /\.css$/,
+	      		loader: "style-loader!css-loader"
+	       },
+	       { 
+	      		test: /\.scss$/, 
+	      		loader: 'style!css!sass!'
+	       },
+		   {
+	        	test: /\.(png|jpg|jpeg|gif)$|\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+	       		loader: 'file'
+	    	},
 		]
 	}
 }

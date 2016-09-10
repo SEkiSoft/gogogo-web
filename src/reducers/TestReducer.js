@@ -1,20 +1,20 @@
-import { TEST_ACTION } from '../constants/ActionTypes.js';
+import { TEST_ACTION } from '../constants/actionTypes.js';
 
 const initialState = {
-	thisWorks: false
-}
+  thisWorks: false
+};
 
 export default function AppState(state = initialState, action) {
-	
-	switch (action.type) {
+  let newState = state;
+  switch (action.type) {
 
-	case TEST_ACTION: 
-		const newState = {
-			thisWorks: true
-		}
-	return newState;
+  case TEST_ACTION:
+    newState = {
+      thisWorks: true
+    };
+    return newState;
 
-	default: 
-		return state;
-	}
+  default:
+    return state;
+  }
 }
