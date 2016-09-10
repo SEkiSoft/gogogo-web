@@ -1,15 +1,4 @@
 import React, { Component } from 'react';
-import crossSection from '../images/cross-section.png';
-import topLeftCorner from '../images/top-left-corner.png';
-import topRightCorner from '../images/top-right-corner.png';
-import topEdge from '../images/top-edge.png';
-import leftEdge from '../images/left-edge.png';
-import rightEdge from '../images/right-edge.png';
-import bottomLeftCorner from '../images/bottom-left-corner.png';
-import bottomRightCorner from '../images/bottom-right-corner.png';
-import bottomEdge from '../images/bottom-edge.png';
-import blackPiece from '../images/black-piece.png';
-import whitePiece from '../images/white-piece.png';
 
 import cx from 'classnames';
 import './stylesheets/CrossSection.scss';
@@ -57,13 +46,14 @@ class CrossSection extends Component {
     const { pieceColour } = this.props;
     const hasPiece = pieceColour === 'w' || pieceColour === 'b';
     const crossSection = this.getBoardEdges();
-    const pieceImage = pieceColour === 'w' ? whitePiece : blackPiece;
-    const showPiece = hasPiece ? 'piece' : 'hiddenPiece';
+    const gamePiece = pieceColour === 'w' ? 'whitePiece' : 'blackPiece';
+    const showPiece = hasPiece ? 'showPiece' : 'hiddenPiece';
 
     return (
-      <div className='crossSection'>
+      <div className='crossSection' onClick={this.setPiece}>
         <div className={cx('vertical-line', crossSection)} />
         <div className={cx('horizontal-line', crossSection)} />
+        <div className={cx('piece', showPiece, gamePiece)} />
       </div>
     );
   }
