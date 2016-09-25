@@ -44,7 +44,6 @@ class Game extends Component {
   render() {
     return (
       <div className='App'>
-        <h1>Go Go Go</h1>
         {
           this.state.gameData.map((row, rowIndex) => {
             const rowClass = rowIndex >= 1 ? 'gameRow' : '';

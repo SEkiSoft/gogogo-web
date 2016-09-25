@@ -4,7 +4,10 @@ import './stylesheets/Title.css';
 class Title extends React.Component {
     render() {
         return (
-            <h1>GoGoGo</h1>
+        	<div className='header'>
+            	<h1>Go Go Go</h1>
+            	{this.props.children}
+            </div>
         );
     }
 }

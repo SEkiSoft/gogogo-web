@@ -1,7 +1,17 @@
 import React from 'react';
-import './stylesheets/Title.css';
+import { hashHistory } from 'react-router';
+import './stylesheets/Login.css';
+import cx from 'classnames';
 
 class Login extends React.Component {
+
+	handleLogin = (e) => {
+		e.preventDefault();
+		if (this.refs.username.value && this.refs.password.value) {
+			hashHistory.push('play');
+		}
+	}
+
 	render() {
 		return (
 			<div className="row">
@@ -9,12 +19,17 @@ class Login extends React.Component {
 					<h2>Login</h2>
 					<form action="/" method="post">
 						<div className="form-group">
-			              <input name="username" className="form-control" placeholder="Username" required/>
+			              <input ref='username' name="username" className="form-control" placeholder="Username" required/>
 			            </div>
 			            <div className="form-group">
-			              <input name="password" type="password" className="form-control" placeholder="Password" required/>
+			              <input ref='password' name="password" type="password" className="form-control" placeholder="Password" required/>
 			            </div>
-			            <button type="submit" className="btn btn-primary center-block">Login</button>
+			            <button 
+			            	type="submit"
+			            	className="btn btn-primary center-block"
+			            	onClick={this.handleLogin}>
+			            	Login
+			            </button>
 					</form>
 					<h5>Don't have an account? Sign up <a href="">here</a>.</h5>
 				</div>
