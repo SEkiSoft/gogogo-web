@@ -1,0 +1,97 @@
+.crossSection {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	&:hover > .hiddenPiece {
+		opacity: 0.7;
+		margin-top: -10px;
+		margin-left: 5px;
+		width: 18px;
+		height: 18px;
+		background-color: rgb(59, 208, 255);
+	}
+}
+
+.vertical-line {
+	width: 2px;
+	height: 26px;
+	margin-left: 13px;
+	background-color: black;
+	&.topEdge {
+		height: 12px;
+		margin-top: 14px;
+	}
+	&.bottomEdge {
+		height: 14px;
+	}
+	&.topLeftCorner {
+		margin-top: 14px;
+		height: 12px;
+	}
+	&.topRightCorner {
+		margin-top: 14px;
+		height: 12px;
+	}
+	&.bottomLeftCorner {
+		height: 14px;
+	}
+	&.bottomRightCorner {
+		height: 14px;
+	}
+}
+
+.horizontal-line {
+	width: 26px;
+	height: 2px;
+	margin-top: -12px;
+	background-color: black;
+	&.leftEdge {
+		width: 13px;
+		margin-left: 13px;
+	}
+	&.rightEdge {
+		width: 13px;
+	}
+	&.bottomEdge {
+		margin-top: 0px;
+	}
+	&.topLeftCorner {
+		width: 13px;
+		margin-left: 13px;
+	}
+	&.topRightCorner {
+		width: 13px;
+	}
+	&.bottomLeftCorner {
+		width: 13px;
+		margin-left: 13px;
+		margin-top: 0px;
+	}
+	&.bottomRightCorner {
+		width: 15px;
+		margin-top: 0px;
+	}
+}
+
+.piece {
+	position: absolute;
+	margin-left: 7px;
+	margin-top: -7px;
+	z-index: 10;
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+
+	&.whitePiece {
+		background-color: white;
+		border: 1px solid black;
+	}
+	&.blackPiece {
+		background-color: black;
+	}
+
+	&.hiddenPiece {
+		opacity: 0;
+	}
+}

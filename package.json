@@ -20,10 +20,13 @@
   "homepage": "https://github.com/SEkiSoft/gogogo-web#readme",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
+    "classnames": "^2.2.5",
     "path": "^0.12.7",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.6",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0"
   },
