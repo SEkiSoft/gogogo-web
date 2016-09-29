@@ -11,6 +11,7 @@ import rootReducer from '../reducers';
 import Login from '../components/Login';
 import Game from '../components/Game';
 import Title from '../components/Title';
+import Signup from '../components/Signup'
 
 const store = createStore(rootReducer, {}, compose(
   applyMiddleware(thunk),
@@ -30,3 +31,4 @@ ReactDOM.render(
     </div>
   </Provider>, document.getElementById('App')
 );
+
