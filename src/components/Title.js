@@ -13,7 +13,7 @@ class Title extends React.Component {
 	render() {
 		const workingStore = this.props.appState.thisWorks;
 		return (
-			<div className='container'>
+			<div className='container-fluid'>
 				<h1>GoGoGo App</h1>
 				<button className='btn btn-default' onClick={this.sendAction}> 					
 					Test Redux 
