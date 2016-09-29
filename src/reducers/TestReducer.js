@@ -1,4 +1,4 @@
-import { TEST_ACTION } from '../constants/actionTypes.js';
+import { TEST_ACTION } from '../constants/ActionTypes.js';
 
 const initialState = {
   thisWorks: false
