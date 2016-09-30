@@ -10,24 +10,6 @@ class Title extends React.Component {
             </div>
         );
     }
-	
-	sendAction = () => {
-		this.props.actions.testAction();
-	}
-}
-
-const mapStateToProps = (state) => {
-	return {
-		appState: state.TestStore
-	}
-}
-
-const mapDispatchToProps = (dispatch) => {
-	return {
-		actions: bindActionCreators ({
-			testAction
-		}, dispatch)
-	}
 }
 
 export default Title;

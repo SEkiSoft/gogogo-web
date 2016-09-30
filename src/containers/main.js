@@ -22,12 +22,13 @@ const store = createStore(rootReducer, {}, compose(
 ReactDOM.render(
   <Provider store={store}>
     <div>
-     <Router history={hashHistory}>
-       <Route path="/" component={Title} >
-	       <IndexRoute component={Login} />
-	       <Route path="play" component={Game} />
-	   </Route>
-  </Router>
+	    <Router history={hashHistory}>
+			<Route path="/" component={Title} >
+			   <IndexRoute component={Login} />
+			   <Route path="play" component={Game} />
+			   <Route path="signup" component={Signup} />
+			</Route>
+	  	</Router>
     </div>
   </Provider>, document.getElementById('App')
 );

@@ -8,8 +8,13 @@ class Login extends React.Component {
 	handleLogin = (e) => {
 		e.preventDefault();
 		if (this.refs.username.value && this.refs.password.value) {
-			hashHistory.push('play');
+			hashHistory.push("play");
 		}
+	}
+
+	handleSignup = (e) => {
+		e.preventDefault();
+		hashHistory.push("signup");
 	}
 
 	render() {
@@ -31,7 +36,7 @@ class Login extends React.Component {
 			            	Login
 			            </button>
 					</form>
-					<h5>Don't have an account? Sign up <a href="">here</a>.</h5>
+					<h5>Don't have an account? Sign up <a href="" onClick={this.handleSignup}>here</a>.</h5>
 				</div>
 			</div>
 		);
