@@ -21,7 +21,7 @@ const store = createStore(rootReducer, {}, compose(
 
 ReactDOM.render(
   <Provider store={store}>
-    <div>
+    <div className = "container-fluid">
 	    <Router history={hashHistory}>
 			<Route path="/" component={Title} >
 			   <IndexRoute component={Login} />

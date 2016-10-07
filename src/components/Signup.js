@@ -16,21 +16,24 @@ class Signup extends React.Component {
 	render() {
 		return(
 			<div className="row">
-				<div className="col-md-3">
+				<div className="col-md-3 col-centered">
 					<h2>Account Signup</h2>
-					<form onSubmit={this.onSubmit} action="">
-						<label>Name</label>
-	                    <input className="form-control" ref="name" 
-	                    placeholder="Enter your name"/>
-
-	                    <label>Username</label>
-	                    <input className="form-control" ref="username" 
-	                    placeholder="Enter your username"/>
-
-	                    <label>Email</label>
-	                    <input className="form-control" ref="email" 
-	                    placeholder="Enter your email"/>
-
+					<form onSubmit={this.onSubmit}>
+						<div className="form-group">
+							<label>Name</label>
+		                    <input className="form-control" ref="name" 
+		                    placeholder="Enter your name" required/>
+		                </div>
+	                    <div className="form-group">
+	                    	<label>Username</label>
+		                    <input className="form-control" ref="username" 
+		                    placeholder="Enter your username" required/>
+	                    </div>
+	                    <div className="form-group">
+		                    <label>Email</label>
+		                    <input className="form-control" ref="email" 
+		                    placeholder="Enter your email" required/>
+	                    </div>
 	                    <button type='submit' className='btn btn-primary btn-md'>Submit</button>
 					</form>
 				</div>
