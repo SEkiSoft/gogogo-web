@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
 import rootReducer from '../reducers';
@@ -22,7 +22,7 @@ const store = createStore(rootReducer, {}, compose(
 ReactDOM.render(
   <Provider store={store}>
     <div className = "container-fluid">
-	    <Router history={hashHistory}>
+	    <Router history={browserHistory}>
 			<Route path="/" component={Title} >
 			   <IndexRoute component={Login} />
 			   <Route path="play" component={Game} />
