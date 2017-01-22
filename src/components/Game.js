@@ -43,13 +43,13 @@ class Game extends Component {
 
   render() {
     return (
-      <div className='App'>
+      <div className="App">
         {
           this.state.gameData.map((row, rowIndex) => {
             const rowClass = rowIndex >= 1 ? 'gameRow' : '';
             return (
               <div key={rowIndex} className={rowClass}>
-              {
+                {
                 row.map((cell, colIndex) =>
                   <CrossSection
                     key={rowIndex.toString() + colIndex.toString()}

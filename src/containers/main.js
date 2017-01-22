@@ -11,7 +11,7 @@ import rootReducer from '../reducers';
 import Login from '../components/Login';
 import Game from '../components/Game';
 import Title from '../components/Title';
-import Signup from '../components/Signup'
+import Signup from '../components/Signup';
 
 const store = createStore(rootReducer, {}, compose(
   applyMiddleware(thunk),
@@ -21,14 +21,14 @@ const store = createStore(rootReducer, {}, compose(
 
 ReactDOM.render(
   <Provider store={store}>
-    <div className = "container-fluid">
-	    <Router history={hashHistory}>
-			<Route path="/" component={Title} >
-			   <IndexRoute component={Login} />
-			   <Route path="play" component={Game} />
-			   <Route path="signup" component={Signup} />
-			</Route>
-	  	</Router>
+    <div className="container-fluid">
+      <Router history={hashHistory}>
+        <Route path="/" component={Title} >
+          <IndexRoute component={Login} />
+          <Route path="play" component={Game} />
+          <Route path="signup" component={Signup} />
+        </Route>
+      </Router>
     </div>
   </Provider>, document.getElementById('App')
 );

@@ -50,7 +50,7 @@ class CrossSection extends Component {
     const showPiece = hasPiece ? 'showPiece' : 'hiddenPiece';
 
     return (
-      <div className='crossSection' onClick={this.setPiece}>
+      <div className="crossSection" onClick={this.setPiece}>
         <div className={cx('vertical-line', crossSection)} />
         <div className={cx('horizontal-line', crossSection)} />
         <div className={cx('piece', showPiece, gamePiece)} />
