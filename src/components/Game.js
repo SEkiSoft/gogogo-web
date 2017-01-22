@@ -3,7 +3,6 @@ import './stylesheets/Game.css';
 import CrossSection from './CrossSection';
 
 class Game extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -28,7 +27,6 @@ class Game extends Component {
                  ['', 'b', '', '', '', '', '', '', '', '', '', 'b', '', '', '', '', '', '', '']]
     };
   }
-
 
   setPiece = (userColour, colIndex, rowIndex) => {
     const gameState = this.state.gameData;

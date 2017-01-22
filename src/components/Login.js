@@ -4,7 +4,6 @@ import './stylesheets/Login.css';
 import cx from 'classnames';
 
 class Login extends React.Component {
-
 	handleLogin = (e) => {
 		e.preventDefault();
 		if (this.refs.email.value && this.refs.password.value) {

@@ -2,7 +2,10 @@
 
 The front-end interface for GoGoGo, powered by React.js
 
-<code> npm install </code>, then  <code> npm start </code>
+```
+npm install
+npm start
+```
 
 External Tools that may help:
 
