@@ -6,7 +6,7 @@ export function loginUserSuccess(userData) {
 }
 
 export function loginUser(email, password) {
-  return dispatch => {
+  return (dispatch) => {
     loginService.getToken(dispatch, email, password).then((response) => {
       document.cookie = `loginSession=${response.data}`;
       return response;
