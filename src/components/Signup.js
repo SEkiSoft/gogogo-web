@@ -1,15 +1,9 @@
 import React from 'react';
 
 class Signup extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   onSubmit = (e) => {
     e.preventDefault();
-
-    console.log(this.refs.name.value);
-    console.log(this.refs.username.value);
   }
 
   render() {

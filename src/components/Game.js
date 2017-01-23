@@ -37,6 +37,7 @@ class Game extends Component {
   }
 
   endTurn() {
+
   }
 
   render() {

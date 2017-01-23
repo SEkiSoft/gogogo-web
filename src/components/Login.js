@@ -1,8 +1,6 @@
 import React from 'react';
-import { hashHistory } from 'react-router';
+import { hashHistory, browserHistory } from 'react-router';
 import '../stylesheets/Login.scss';
-import { browserHistory } from 'react-router';
-import cx from 'classnames';
 
 class Login extends React.Component {
   handleLogin = (e) => {
@@ -34,11 +32,20 @@ class Login extends React.Component {
               <input ref="email" name="email" className="form-control" placeholder="Email" required />
             </div>
             <div className="form-group">
-              <input ref="password" name="password" type="password" className="form-control" placeholder="Password" required />
+              <input
+                ref="password"
+                name="password"
+                type="password"
+                className="form-control"
+                placeholder="Password"
+                required
+              />
             </div>
             <button type="submit" className="btn btn-primary center-block">Login</button>
           </form>
-          <h5>Don't have an account? Sign up <a href="" onClick={this.handleSignup}>here</a>.</h5>
+          <h5>Don't have an account? Sign up
+            <a href="" onClick={this.handleSignup}>here</a>.
+          </h5>
         </div>
       </div>
     );
