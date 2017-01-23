@@ -1,13 +1,14 @@
 {
   "name": "gogogo-web",
   "version": "0.1.0",
-  "description": "The front end interface to gogogo, an online go game",
+  "description": "The front end interface to gogogo, an online version of the game of Go",
   "main": "bundle.js",
   "scripts": {
     "test": "mocha --require babel-register --require ignore-styles test/*.spec.js",
     "webpack": "webpack --watch -d --progress --colors",
     "start": "webpack-dev-server --hot --inline --content-base public/",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "start": "webpack-dev-server --host 0.0.0.0 --port 3000 --hot --inline --content-base public/"
   },
   "repository": {
     "type": "git",

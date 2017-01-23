@@ -1,9 +1,16 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
 import '../stylesheets/Login.scss';
+import { browserHistory } from 'react-router';
 import cx from 'classnames';
 
 class Login extends React.Component {
+  handleLogin = (e) => {
+    e.preventDefault();
+    if (this.refs.email.value && this.refs.password.value) {
+      browserHistory.push('play');
+    }
+  }
 
   handleLogin = (e) => {
     e.preventDefault();
@@ -14,17 +21,17 @@ class Login extends React.Component {
 
   handleSignup = (e) => {
     e.preventDefault();
-    hashHistory.push('signup');
+    browserHistory.push('signup');
   }
 
   render() {
     return (
       <div className="row">
-        <div className="col-md-3 col-centered">
+        <div className="col-md-4 col-md-offset-4">
           <h2>Login</h2>
           <form onSubmit={this.handleLogin}>
             <div className="form-group">
-              <input ref="username" name="username" className="form-control" placeholder="Username" required />
+              <input ref="email" name="email" className="form-control" placeholder="Email" required />
             </div>
             <div className="form-group">
               <input ref="password" name="password" type="password" className="form-control" placeholder="Password" required />
