@@ -9,7 +9,8 @@ npm start
 
 External Tools that may help:
 
-1. [Linter](https://github.com/roadhump/SublimeLinter-eslint) for sublime text. Mostly follows Airbnb's style guide. Installing the npm packages shouldn't be mandatory since it is included locally.
+1. [Linter](https://github.com/roadhump/SublimeLinter-eslint) for sublime text. Follows most of Airbnb's style guide.
+
 2. [Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to track application state from the console.
 
 | Dependency | Use |
