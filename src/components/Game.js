@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './stylesheets/Game.css';
+import '../stylesheets/Game.scss';
 import CrossSection from './CrossSection';
 
 class Game extends Component {

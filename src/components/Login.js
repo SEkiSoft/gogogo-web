@@ -1,6 +1,6 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
-import './stylesheets/Login.css';
+import '../stylesheets/Login.scss';
 import cx from 'classnames';
 
 class Login extends React.Component {

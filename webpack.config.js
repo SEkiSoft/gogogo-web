@@ -5,7 +5,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
     './src/containers/main.js',
-    './src/components/stylesheets/main.scss'
+    './src/stylesheets/main.scss'
   ],
   output: {
     publicPath: '/public/',
