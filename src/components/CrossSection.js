@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import cx from 'classnames';
-import './stylesheets/CrossSection.scss';
+import '../stylesheets/CrossSection.scss';
 
 class CrossSection extends Component {
 
@@ -50,7 +50,7 @@ class CrossSection extends Component {
     const showPiece = hasPiece ? 'showPiece' : 'hiddenPiece';
 
     return (
-      <div className='crossSection' onClick={this.setPiece}>
+      <div className="crossSection" onClick={this.setPiece}>
         <div className={cx('vertical-line', crossSection)} />
         <div className={cx('horizontal-line', crossSection)} />
         <div className={cx('piece', showPiece, gamePiece)} />

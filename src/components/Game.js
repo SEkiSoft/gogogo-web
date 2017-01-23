@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './stylesheets/Game.css';
+import '../stylesheets/Game.scss';
 import CrossSection from './CrossSection';
 
 class Game extends Component {
@@ -37,17 +37,18 @@ class Game extends Component {
   }
 
   endTurn() {
+
   }
 
   render() {
     return (
-      <div className='App'>
+      <div id="App" className="App">
         {
           this.state.gameData.map((row, rowIndex) => {
             const rowClass = rowIndex >= 1 ? 'gameRow' : '';
             return (
               <div key={rowIndex} className={rowClass}>
-              {
+                {
                 row.map((cell, colIndex) =>
                   <CrossSection
                     key={rowIndex.toString() + colIndex.toString()}
