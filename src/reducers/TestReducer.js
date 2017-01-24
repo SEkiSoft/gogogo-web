@@ -1,18 +1,26 @@
-import { TEST_ACTION } from '../constants/actionTypes';
+import { EMAIL_FIELD_CHANGE, PASS_FIELD_CHANGE, LOGIN } from '../constants/actionTypes';
 
 const initialState = {
-  thisWorks: false
+  email: '',
+  password: ''
 };
 
 export default function AppState(state = initialState, action) {
-  let newState = state;
   switch (action.type) {
+  case EMAIL_FIELD_CHANGE:
+    return Object.assign({}, state, {
+      email: action.email
+    });
 
-  case TEST_ACTION:
-    newState = {
-      thisWorks: true
-    };
-    return newState;
+  case PASS_FIELD_CHANGE:
+    return Object.assign({}, state, {
+      password: action.password
+    });
+
+  case LOGIN:
+    // Make server call for authentication
+    // console.log(state.email, state.password);
+    return state;
 
   default:
     return state;

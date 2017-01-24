@@ -7,7 +7,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import rootReducer from '../reducers';
 
-import Login from '../components/Login';
+import Login from './login';
 import Game from '../components/Game';
 import Title from '../components/Title';
 import Signup from '../components/Signup';

@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:3000',
     './src/containers/main.js',
     './src/stylesheets/main.scss'
   ],

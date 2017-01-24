@@ -1,2 +1,4 @@
 export const TEST_ACTION = 'TEST_ACTION';
 export const LOGIN = 'LOGIN';
+export const EMAIL_FIELD_CHANGE = 'EMAIL_FIELD_CHANGE';
+export const PASS_FIELD_CHANGE = 'PASS_FIELD_CHANGE';
