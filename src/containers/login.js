@@ -4,7 +4,8 @@ import { emailFieldChange, passFieldChange, login } from '../actions/loginPageAc
 import LoginForm from '../components/LoginForm';
 
 const mapStateToProps = state => ({
-  state
+  email: state.email,
+  password: state.password
 });
 
 const mapDispatchToProps = dispatch => ({
