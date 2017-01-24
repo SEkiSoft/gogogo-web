@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class Signup extends React.Component {
 
@@ -13,24 +13,30 @@ class Signup extends React.Component {
           <h2>Account Signup</h2>
           <form onSubmit={this.onSubmit}>
             <div className="form-group">
-              <label>Username</label>
+              <label htmlFor="id">Username</label>
               <input
-                className="form-control" ref="username"
-                placeholder="Enter a username" required
+                className="form-control"
+                placeholder="Enter a username"
+                id="username"
+                required
               />
             </div>
             <div className="form-group">
-              <label>Password</label>
+              <label htmlFor="password">Password</label>
               <input
-                className="form-control" ref="password"
-                placeholder="Enter a password" required
+                className="form-control"
+                id="password"
+                placeholder="Enter a password"
+                required
               />
             </div>
             <div className="form-group">
-              <label>Email</label>
+              <label htmlFor="email">Email</label>
               <input
-                className="form-control" ref="email"
-                placeholder="Enter your email" required
+                className="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
               />
             </div>
             <button type="submit" className="btn btn-primary btn-md">Signup</button>
