@@ -1,11 +1,7 @@
 import React, { PropTypes } from 'react';
 import { browserHistory } from 'react-router';
 import '../stylesheets/Login.scss';
-
-function handleSignup(e) {
-  e.preventDefault();
-  browserHistory.push('signup');
-}
+import { Link } from 'react-router';
 
 const LoginForm = ({ updateEmailInput, updatePasswordInput, handleLogin, email, password }) => (
   <div className="row">
@@ -33,7 +29,7 @@ const LoginForm = ({ updateEmailInput, updatePasswordInput, handleLogin, email, 
         </div>
         <button type="submit" className="btn btn-primary center-block">Login</button>
       </form>
-      <h5>Don't have an account? Sign up <a href="" onClick={handleSignup}>here</a>.</h5>
+      <h5>Don't have an account? Sign up <Link to="/signup">here</Link>.</h5>
     </div>
   </div>
 );
