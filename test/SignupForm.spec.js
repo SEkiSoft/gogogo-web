@@ -13,6 +13,11 @@ describe('<SignupForm />', () => {
     expect(wrapper.find('h2')).to.have.length(1);
   });
 
+  it('should render the correct text for the title', () => {
+    const wrapper = shallow(<SignupForm state={state} />);
+    expect(wrapper.find('h2').text()).to.equal('Account Signup');
+  });
+
   it('should render 3 inputs', () => {
     const wrapper = shallow(<SignupForm state={state} />);
     expect(wrapper.find('input')).to.have.length(3);
