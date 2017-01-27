@@ -9,7 +9,7 @@ import rootReducer from '../reducers';
 
 import Login from './login';
 import Signup from './signup';
-
+import HomePage from '../components/HomePage';
 import Game from '../components/Game';
 import Title from '../components/Title';
 
@@ -25,6 +25,7 @@ ReactDOM.render(
       <Router history={browserHistory}>
         <Route path="/" component={Title} >
           <IndexRoute component={Login} />
+          <Route path="home" component={HomePage} />
           <Route path="play" component={Game} />
           <Route path="signup" component={Signup} />
         </Route>
