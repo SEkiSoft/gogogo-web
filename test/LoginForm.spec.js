@@ -47,4 +47,11 @@ describe('<LoginForm />', () => {
     });
     expect(onChange.calledTwice).to.equal(true);
   });
+
+  it('should call function on form submission', () => {
+    const onClick = sinon.spy();
+    const wrapper = shallow(<LoginForm handleLogin={onClick} />);
+    wrapper.find('form').simulate('submit');
+    expect(onClick.calledOnce).to.equal(true);
+  });
 });
