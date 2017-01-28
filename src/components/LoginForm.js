@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
-import '../stylesheets/Login.scss';
 
 const LoginForm = ({ updateEmailInput, updatePasswordInput, handleLogin, email, password }) => (
   <div className="row">

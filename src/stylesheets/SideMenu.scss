@@ -4,4 +4,13 @@
 
 .side-menu-button {
 	padding: 40px 0;
+	color: #ffffff;
+	background-color: #0091ea;
+	border: 2px solid #ffffff;
+
+	&:hover {
+		color: #0091ea;
+		background-color: #ffffff;
+		border: 2px solid #0091ea;
+	}
 }
