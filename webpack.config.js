@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif)$|\.woff2?$|\.ttf$|\.eot$|\.svg$/,
-        loader: 'file'
+        loader: 'file?name=fonts/roboto'
       },
     ]
   },
