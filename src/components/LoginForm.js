@@ -32,7 +32,9 @@ const LoginForm = ({ updateEmailInput, updatePasswordInput, handleLogin, email, 
             <label for="password" className="left-align">Password</label>
           </div>
         </div>
-        <button type="submit" className="waves-effect waves-light btn-large cyan">Login</button>
+        <button id="loginButton" type="submit" className="waves-effect waves-light btn-large cyan">
+          Login
+        </button>
       </form>
       <h6>Don't have an account? Sign up <Link to="/signup">here</Link>.</h6>
     </div>
