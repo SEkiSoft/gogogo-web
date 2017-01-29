@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const LoginForm = ({ updateEmailInput, updatePasswordInput, handleLogin, email, password }) => (
   <div className="row">
     <div className="col m4 offset-m4">
-      <h3 id="login">Login</h3>
+      <h3 className="login">Login</h3>
       <form onSubmit={handleLogin} className="col m12">
         <div className="row">
           <div className="input-field col m12">
@@ -32,7 +32,7 @@ const LoginForm = ({ updateEmailInput, updatePasswordInput, handleLogin, email, 
             <label for="password" className="left-align">Password</label>
           </div>
         </div>
-        <button id="loginButton" type="submit" className="waves-effect waves-light btn-large cyan">
+        <button type="submit" className="waves-effect waves-light btn-large cyan loginButton">
           Login
         </button>
       </form>
