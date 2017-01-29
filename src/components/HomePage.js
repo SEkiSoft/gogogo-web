@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import '../stylesheets/Login.scss';
-import SideMenu from './SideMenu'
+import MainMenu from './MainMenu'
 class HomePage extends Component {
 
   constructor(props) {
@@ -17,15 +17,15 @@ class HomePage extends Component {
   }
 
   goToUserPage() {
-    console.log('this');
+
   }
 
 
   render() {
     return (
-      <div>
+      <div className="container">
         <div className="home-page-container">
-          <SideMenu />
+          <MainMenu />
         </div>
       </div>
     );
