@@ -1,7 +1,7 @@
-import React, { PropTypes, Component } from 'react';
-import { Link } from 'react-router';
+import React, { Component } from 'react';
 import '../stylesheets/Login.scss';
-import MainMenu from './MainMenu'
+import MainMenu from './MainMenu';
+
 class HomePage extends Component {
 
   constructor(props) {
@@ -12,7 +12,7 @@ class HomePage extends Component {
     };
   }
 
-  openModal () {
+  openModal() {
 
   }
 
