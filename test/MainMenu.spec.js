@@ -9,7 +9,7 @@ describe('<MainMenu />', () => {
 
   beforeEach(() => {
     wrapper = shallow(<MainMenu />);
-  })
+  });
 
   it('should render the buttons container', () => {
     expect(wrapper.find('div#buttons-container')).to.have.length(1);

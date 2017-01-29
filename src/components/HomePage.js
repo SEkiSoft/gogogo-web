@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../stylesheets/Login.scss';
 import MainMenu from './MainMenu';
 
 class HomePage extends Component {

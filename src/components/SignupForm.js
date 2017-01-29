@@ -2,43 +2,49 @@ import React, { PropTypes } from "react";
 
 const SignupForm = ({ state, updateEmailInput, updatePasswordInput, updateUserInput, handleSignup }) => (
   <div className="row">
-    <div className="col-md-4 col-md-offset-4">
-      <h2>Account Signup</h2>
-      <form onSubmit={handleSignup}>
-        <div className="form-group">
-          <label htmlFor="id">Username</label>
-          <input
-            value={state.username}
-            onChange={updateUserInput}
-            className="form-control"
-            placeholder="Enter a username"
-            id="username"
-            required
-          />
+    <div className="col m4 offset-m4">
+      <h4>Account Signup</h4>
+      <form onSubmit={handleSignup} className="col m12">
+        <div className="row">
+          <div className="input-field col m12">
+            <input
+              value={state.username}
+              onChange={updateUserInput}
+              className="validate"
+              type="text"
+              id="user"
+              required
+            />
+            <label for="user" className="left-align">Username</label>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input
-            value={state.password}
-            onChange={updatePasswordInput}
-            className="form-control"
-            id="password"
-            placeholder="Enter a password"
-            required
-          />
+        <div className="row">
+          <div className="input-field col m12">
+            <input
+              value={state.password}
+              onChange={updatePasswordInput}
+              className="validate"
+              id="password"
+              type="password"
+              required
+            />
+            <label for="password" className="left-align">Password</label>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            value={state.email}
-            onChange={updateEmailInput}
-            className="form-control"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
+        <div className="row">
+          <div className="input-field col m12">
+            <input
+              value={state.email}
+              onChange={updateEmailInput}
+              className="validate"
+              id="email"
+              type="email"
+              required
+            />
+            <label for="email" className="left-align" data-error="Incorrect Format">Email</label>
+          </div>
         </div>
-        <button type="submit" className="btn btn-primary btn-md">Signup</button>
+        <button type="submit" className="waves-effect waves-light btn-large cyan">Signup</button>
       </form>
     </div>
   </div>

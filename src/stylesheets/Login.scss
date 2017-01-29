@@ -1,0 +1,23 @@
+.login {
+  margin-bottom: 15px;
+}
+
+.row {
+  .input-field {
+    input:focus:not {
+      border-bottom: 1px solid #ccc;
+    }
+    input:focus + input:not.invalid {
+      border-bottom: 1px solid #00bcd4 !important;
+    }
+    input:focus + label {
+      color: #00bcd4 !important;
+    }
+    margin-bottom: -10px;
+  }
+}
+
+.loginButton {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
