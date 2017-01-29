@@ -6,13 +6,12 @@ class HomePage extends Component {
 
   constructor(props) {
     super(props);
-    this.openModal = this.openModal.bind(this);
     this.state = {
       isModalOpen: false
     };
   }
 
-  openModal() {
+  openModal = () => {
 
   }
 
